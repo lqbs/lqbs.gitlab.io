@@ -1,14 +1,13 @@
 ---
-title: "26 个必知 AI Agent 开源项目教程"
+
+## title: "26 个必知 AI Agent 开源项目教程"
+
 date: 2025-06-26T00:00:00+08:00
 draft: false
 tags: ["AI", "Agent", "教程"]
 categories: ["AI"]
----
 
 2025~2026 年，AI Agent 领域涌现了大量高质量开源项目。本文系统梳理 25 个关键项目，按用途分类讲解。
-
-<!--more-->
 
 ## 目录
 
@@ -58,17 +57,21 @@ cp -R rules/common ~/.claude/rules/ecc/
 
 **核心命令**:
 
-| 命令 | 用途 |
-|------|------|
-| `/plan` | 规划和架构设计 |
-| `/tdd` | 测试驱动开发 |
-| `/code-review` | 代码审查 |
-| `/security-scan` | 安全扫描 |
+
+| 命令               | 用途             |
+| ---------------- | -------------- |
+| `/plan`          | 规划和架构设计        |
+| `/tdd`           | 测试驱动开发         |
+| `/code-review`   | 代码审查           |
+| `/security-scan` | 安全扫描           |
 | `/harness-audit` | 评估 Agent 环境健康度 |
+
 
 **核心哲学**: Agent 的智能来自模型训练，但 Agent 产品需要高质量的 Harness。ECC 就是这样一个为各种 Agent 提供统一 Harness 的系统。
 
 ---
+
+
 
 ### 2. gstack — Garry Tan 的虚拟工程团队
 
@@ -99,6 +102,7 @@ cd ~/.claude/skills/gstack && ./setup
 ```
 
 **关键特点**:
+
 - 23 个专业技能 + 8 个工具命令
 - 完整的"思考→规划→构建→审查→测试→发布→回顾"流程
 - 支持 10 种 AI 编码 Agent
@@ -106,6 +110,8 @@ cd ~/.claude/skills/gstack && ./setup
 - 浏览器集成 QA
 
 ---
+
+
 
 ### 3. agency-agents — AI 机构角色库
 
@@ -125,17 +131,21 @@ cd ~/.claude/skills/gstack && ./setup
 
 **Agent 示例**:
 
-| 部门 | Agent | 专长 |
-|------|-------|------|
-| 💻 工程部 | 前端开发者、后端架构师、DevOps 自动化师 | React、API 设计、CI/CD |
-| 🎨 设计部 | UI 设计师、品牌守护者、乐趣注入师 | 设计系统、品牌一致性、互动体验 |
-| 📢 市场部 | 增长黑客、内容创作者、SEO 专家 | 用户获取、内容策略、搜索引擎优化 |
-| 💰 付费媒体 | PPC 策略师、搜索查询分析师 | Google Ads、关键词研究 |
-| 🔒 安全部 | 安全架构师、渗透测试员、事件响应员 | 威胁建模、安全审计、事件响应 |
+
+| 部门      | Agent                   | 专长                 |
+| ------- | ----------------------- | ------------------ |
+| 💻 工程部  | 前端开发者、后端架构师、DevOps 自动化师 | React、API 设计、CI/CD |
+| 🎨 设计部  | UI 设计师、品牌守护者、乐趣注入师      | 设计系统、品牌一致性、互动体验    |
+| 📢 市场部  | 增长黑客、内容创作者、SEO 专家       | 用户获取、内容策略、搜索引擎优化   |
+| 💰 付费媒体 | PPC 策略师、搜索查询分析师         | Google Ads、关键词研究   |
+| 🔒 安全部  | 安全架构师、渗透测试员、事件响应员       | 威胁建模、安全审计、事件响应     |
+
 
 **特色**: 每个 Agent 包含身份特征、核心任务、技术交付物、成功指标和沟通风格。
 
 ---
+
+
 
 ### 4. oh-my-openagent — 多模型 Agent 编排引擎
 
@@ -163,13 +173,17 @@ npx lazycodex-ai install
 
 **Agent 模型映射**:
 
-| Agent | 模型 | 用途 |
-|-------|------|------|
-| Sisyphus | Opus / Kimi K2.6 / GLM 5.1 | 主编排器、规划与委派 |
-| Hephaestus | GPT-5.5 | 自主深度工作 |
-| Prometheus | Opus / Kimi K2.6 | 战略规划 |
+
+| Agent      | 模型                         | 用途         |
+| ---------- | -------------------------- | ---------- |
+| Sisyphus   | Opus / Kimi K2.6 / GLM 5.1 | 主编排器、规划与委派 |
+| Hephaestus | GPT-5.5                    | 自主深度工作     |
+| Prometheus | Opus / Kimi K2.6           | 战略规划       |
+
 
 ---
+
+
 
 ### 5. Goose — 通用开源 AI Agent
 
@@ -196,7 +210,11 @@ curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download
 
 ---
 
+
+
 ## 二、Agent 技能与最佳实践
+
+
 
 ### 6. Superpowers — 强制纪律的软件开发方法论
 
@@ -246,27 +264,33 @@ pi install git:github.com/obra/superpowers
 
 **4 条哲学**:
 
-| 原则 | 核心 |
-|------|------|
-| **TDD** | 先写测试，永远。没有失败测试前不许写生产代码 |
+
+| 原则           | 核心                                            |
+| ------------ | --------------------------------------------- |
+| **TDD**      | 先写测试，永远。没有失败测试前不许写生产代码                        |
 | **系统化 > 即兴** | Brainstorming → Plan → TDD → Review，每一步有明确出入口 |
-| **复杂度降低** | YAGNI：提前抽象/配置/扩展都是诱惑 |
-| **证据 > 声明** | 不接受"应该修好了"，只接受"跑了 `npm test` 输出 12 passed" |
+| **复杂度降低**    | YAGNI：提前抽象/配置/扩展都是诱惑                          |
+| **证据 > 声明**  | 不接受"应该修好了"，只接受"跑了 `npm test` 输出 12 passed"    |
+
 
 **Skills 列表**:
 
-| 类别 | Skills |
-|------|--------|
-| Meta | `using-superpowers`, `writing-skills` |
-| 测试 | `test-driven-development` |
-| 调试 | `systematic-debugging`, `verification-before-completion` |
+
+| 类别    | Skills                                                                                                                                                                                                                        |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Meta  | `using-superpowers`, `writing-skills`                                                                                                                                                                                         |
+| 测试    | `test-driven-development`                                                                                                                                                                                                     |
+| 调试    | `systematic-debugging`, `verification-before-completion`                                                                                                                                                                      |
 | 协作/流程 | `brainstorming`, `writing-plans`, `executing-plans`, `dispatching-parallel-agents`, `requesting-code-review`, `receiving-code-review`, `using-git-worktrees`, `finishing-a-development-branch`, `subagent-driven-development` |
+
 
 **硬门禁**: 没有用户批准的设计，不许进入实现阶段。Agent 必须显式声明"Using X to Y"，让你知道它在用什么 Skill。
 
 **完美场景**: 有清晰边界的、值得写测试的、能跑子 Agent 的项目。不适合 30 秒一次性脚本、纯调研、纯前端像素调整。
 
 ---
+
+
 
 ### 7. andrej-karpathy-skills — Karpathy 式编码指南
 
@@ -276,12 +300,14 @@ pi install git:github.com/obra/superpowers
 
 **四个原则**:
 
-| 原则 | 解决的问题 | 核心要求 |
-|------|-----------|---------|
-| **Think Before Coding** | 错误假设、隐藏困惑 | 明确假设、呈现多解释、困惑时提问 |
-| **Simplicity First** | 过度复杂化 | 不需要的功能不做、单次使用代码不抽象 |
-| **Surgical Changes** | 无关修改 | 只改必须改的、不"改进"相邻代码 |
-| **Goal-Driven Execution** | 指示式 vs 声明式 | 定义成功标准、验证循环 |
+
+| 原则                        | 解决的问题      | 核心要求               |
+| ------------------------- | ---------- | ------------------ |
+| **Think Before Coding**   | 错误假设、隐藏困惑  | 明确假设、呈现多解释、困惑时提问   |
+| **Simplicity First**      | 过度复杂化      | 不需要的功能不做、单次使用代码不抽象 |
+| **Surgical Changes**      | 无关修改       | 只改必须改的、不"改进"相邻代码   |
+| **Goal-Driven Execution** | 指示式 vs 声明式 | 定义成功标准、验证循环        |
+
 
 **安装**:
 
@@ -296,6 +322,8 @@ curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy
 
 ---
 
+
+
 ### 8. Matt Pocock Skills — 真正工程师的技能
 
 **仓库**: [mattpocock/skills](https://github.com/mattpocock/skills) ⭐ 147K+
@@ -304,15 +332,17 @@ curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy
 
 **核心技能**:
 
-| 命令 | 用途 |
-|------|------|
-| `/grill-me` | 在开始编码前进行详细需求追问 |
-| `/grill-with-docs` | 追问 + 构建领域模型、术语表 |
-| `/tdd` | 测试驱动开发的红-绿-重构循环 |
-| `/diagnosing-bugs` | 系统化调试循环 |
-| `/improve-codebase-architecture` | 扫描并改善代码架构 |
-| `/handoff` | 生成交接文档 |
-| `/to-prd` | 将对话转化为 PRD |
+
+| 命令                               | 用途              |
+| -------------------------------- | --------------- |
+| `/grill-me`                      | 在开始编码前进行详细需求追问  |
+| `/grill-with-docs`               | 追问 + 构建领域模型、术语表 |
+| `/tdd`                           | 测试驱动开发的红-绿-重构循环 |
+| `/diagnosing-bugs`               | 系统化调试循环         |
+| `/improve-codebase-architecture` | 扫描并改善代码架构       |
+| `/handoff`                       | 生成交接文档          |
+| `/to-prd`                        | 将对话转化为 PRD      |
+
 
 **安装**:
 
@@ -323,6 +353,8 @@ npx skills@latest add mattpocock/skills
 
 ---
 
+
+
 ### 9. Addy Osmani Agent Skills — 生产级工程技能
 
 **仓库**: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) ⭐ 66.9K+
@@ -331,16 +363,18 @@ npx skills@latest add mattpocock/skills
 
 **8 个斜杠命令**:
 
-| 阶段 | 命令 | 原则 |
-|------|------|------|
-| 定义 | `/spec` | 先写规范再写代码 |
-| 规划 | `/plan` | 小、原子化任务 |
-| 构建 | `/build` | 一次一个切片 |
-| 验证 | `/test` | 测试即证明 |
-| 审查 | `/review` | 改善代码健康 |
-| 性能 | `/webperf` | 先测量再优化 |
-| 简化 | `/code-simplify` | 清晰胜过聪明 |
-| 发布 | `/ship` | 越快越安全 |
+
+| 阶段  | 命令               | 原则       |
+| --- | ---------------- | -------- |
+| 定义  | `/spec`          | 先写规范再写代码 |
+| 规划  | `/plan`          | 小、原子化任务  |
+| 构建  | `/build`         | 一次一个切片   |
+| 验证  | `/test`          | 测试即证明    |
+| 审查  | `/review`        | 改善代码健康   |
+| 性能  | `/webperf`       | 先测量再优化   |
+| 简化  | `/code-simplify` | 清晰胜过聪明   |
+| 发布  | `/ship`          | 越快越安全    |
+
 
 **安装**:
 
@@ -351,15 +385,20 @@ npx skills@latest add mattpocock/skills
 ```
 
 **技能特点**:
+
 - 每个 Skill 包含 YAML frontmatter + Markdown 工作流
 - 内置反合理化表（Anti-rationalization table），防止 Agent 跳过步骤
 - 验证不可协商——证据要求明确
 
 ---
 
+
+
 ### 10. Ponytail — 懒惰资深工程师模式
 
 **仓库**: [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) ⭐ 58.9K+
+
+> 💡 **对应 Skill**: `ponytail` — 让 AI Agent 遵循 YAGNI 原则，写最少的必要代码。配套 `/ponytail-review` 审查当前 diff 中的过度工程问题。支持 `lite/full/ultra/off` 四级强度。
 
 **定位**: 让 AI Agent 像团队中最懒但最聪明的资深工程师一样思考——写最少的代码，做最正确的事。
 
@@ -377,13 +416,15 @@ npx skills@latest add mattpocock/skills
 
 **性能数据**:
 
-| 指标 | 改善 |
-|------|------|
-| 代码量 | -54%（最多 -94%） |
-| Token 消耗 | -22% |
-| 成本 | -20% |
-| 速度 | -27% |
-| 安全性 | 100%（无退化） |
+
+| 指标       | 改善            |
+| -------- | ------------- |
+| 代码量      | -54%（最多 -94%） |
+| Token 消耗 | -22%          |
+| 成本       | -20%          |
+| 速度       | -27%          |
+| 安全性      | 100%（无退化）     |
+
 
 **安装**:
 
@@ -394,6 +435,8 @@ npx skills@latest add mattpocock/skills
 ```
 
 ---
+
+
 
 ### 11. Caveman — 穴居人 Token 压缩
 
@@ -414,17 +457,23 @@ curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.
 
 **命令**:
 
-| 命令 | 用途 |
-|------|------|
-| `/caveman [lite\|full\|ultra\|wenyan]` | 设置压缩级别 |
-| `/caveman-commit` | 50 字符以内的常规提交信息 |
-| `/caveman-review` | 单行 PR 评论 |
-| `/caveman-stats` | 显示 Token 节省统计 |
-| `/caveman-compress <file>` | 压缩记忆文件 |
+
+| 命令                         | 用途             |
+| -------------------------- | -------------- |
+| `/caveman [lite            | full           |
+| `/caveman-commit`          | 50 字符以内的常规提交信息 |
+| `/caveman-review`          | 单行 PR 评论       |
+| `/caveman-stats`           | 显示 Token 节省统计  |
+| `/caveman-compress <file>` | 压缩记忆文件         |
+
 
 ---
 
+
+
 ## 三、规范驱动开发 (SDD)
+
+
 
 ### 12. Spec Kit — GitHub 官方 SDD 工具包
 
@@ -463,6 +512,8 @@ specify init my-project --integration copilot
 
 ---
 
+
+
 ### 13. OpenSpec — AI 编码助手的 SDD
 
 **仓库**: [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐ 56.7K+
@@ -481,12 +532,14 @@ openspec init
 
 **命令**:
 
-| 命令 | 用途 |
-|------|------|
+
+| 命令              | 用途        |
+| --------------- | --------- |
 | `/opsx:explore` | 无压力的探索式对话 |
-| `/opsx:propose` | 提出修改方案 |
-| `/opsx:apply` | 执行实现 |
-| `/opsx:archive` | 归档变更记录 |
+| `/opsx:propose` | 提出修改方案    |
+| `/opsx:apply`   | 执行实现      |
+| `/opsx:archive` | 归档变更记录    |
+
 
 **与其他方案对比**:
 
@@ -495,7 +548,11 @@ openspec init
 
 ---
 
+
+
 ## 四、知识图谱与代码理解
+
+
 
 ### 14. Graphify — 代码知识图谱
 
@@ -529,12 +586,15 @@ graphify-out/
 ```
 
 **支持的文件类型**:
+
 - 代码: 36 种 tree-sitter 语法（Python、TS、Go、Rust 等）
 - 文档: Markdown、PDF、Office
 - 图片: PNG、JPG、WebP、GIF
 - 音视频: MP4、MOV、MP3、WAV、YouTube
 
 ---
+
+
 
 ### 15. Understand Anything — 交互式知识图谱
 
@@ -555,21 +615,26 @@ curl -fsSL https://raw.githubusercontent.com/Egonex-AI/Understand-Anything/main/
 
 **核心命令**:
 
-| 命令 | 用途 |
-|------|------|
-| `/understand` | 分析整个代码库构建知识图谱 |
-| `/understand-dashboard` | 打开交互式仪表板 |
-| `/understand-chat` | 对代码库提问 |
-| `/understand-diff` | 分析变更影响 |
-| `/understand-explain` | 深度解析特定文件/函数 |
-| `/understand-onboard` | 生成新成员入职指南 |
+
+| 命令                      | 用途            |
+| ----------------------- | ------------- |
+| `/understand`           | 分析整个代码库构建知识图谱 |
+| `/understand-dashboard` | 打开交互式仪表板      |
+| `/understand-chat`      | 对代码库提问        |
+| `/understand-diff`      | 分析变更影响        |
+| `/understand-explain`   | 深度解析特定文件/函数   |
+| `/understand-onboard`   | 生成新成员入职指南     |
+
 
 **技术架构**:
+
 - **Tree-sitter**: 确定性解析，提取结构化事实
 - **LLM**: 语义理解，生成摘要、标签、架构分层
 - **5 个专业 Agent**: 项目扫描、文件分析、架构分析、导览生成、图审查
 
 ---
+
+
 
 ### 16. CodeGraph — 预索引代码知识图
 
@@ -593,12 +658,14 @@ codegraph init
 
 **性能基准**（7 个开源代码库测试）:
 
-| 指标 | 改善 |
-|------|------|
-| 工具调用 | -58%（中位数） |
-| 速度 | -22% |
-| 文件读取 | 几乎归零 |
+
+| 指标    | 改善        |
+| ----- | --------- |
+| 工具调用  | -58%（中位数） |
+| 速度    | -22%      |
+| 文件读取  | 几乎归零      |
 | Token | 25-64% 减少 |
+
 
 **核心能力**:
 
@@ -610,7 +677,11 @@ codegraph init
 
 ---
 
+
+
 ## 五、记忆与上下文管理
+
+
 
 ### 17. Claude-Mem — 跨会话持久记忆
 
@@ -636,11 +707,14 @@ npx claude-mem install
 4. **MCP 搜索工具**: 3 层渐进式检索
 
 **特点**:
+
 - 渐进式披露：分层的记忆检索，显示 Token 成本
 - 隐私控制：使用 `<private>` 标签排除敏感内容
 - 引用机制：通过 ID 引用过往观察
 
 ---
+
+
 
 ### 18. Mem0 — AI Agent 通用记忆层
 
@@ -672,6 +746,7 @@ results = memory.search("what is alice using?", filters={"user_id": "alice"})
 ```
 
 **核心能力**:
+
 - 多级记忆（用户、会话、Agent）
 - 混合搜索（语义 + BM25 + 实体匹配）
 - 时间感知检索
@@ -679,7 +754,11 @@ results = memory.search("what is alice using?", filters={"user_id": "alice"})
 
 ---
 
+
+
 ## 六、提示工程与文档获取
+
+
 
 ### 19. Prompt Engineering Guide — 提示工程大全
 
@@ -689,14 +768,18 @@ results = memory.search("what is alice using?", filters={"user_id": "alice"})
 
 **核心内容**:
 
-| 类别 | 内容 |
-|------|------|
-| 技术 | Zero-Shot、Few-Shot、Chain-of-Thought、Self-Consistency、RAG、ReAct |
-| 应用 | 函数调用、代码生成、数据生成 |
-| 模型 | ChatGPT、GPT-4、Gemini、LLaMA、Mistral、Claude 等 |
-| 风险 | 对抗性提示、事实性、偏见 |
+
+| 类别  | 内容                                                             |
+| --- | -------------------------------------------------------------- |
+| 技术  | Zero-Shot、Few-Shot、Chain-of-Thought、Self-Consistency、RAG、ReAct |
+| 应用  | 函数调用、代码生成、数据生成                                                 |
+| 模型  | ChatGPT、GPT-4、Gemini、LLaMA、Mistral、Claude 等                    |
+| 风险  | 对抗性提示、事实性、偏见                                                   |
+
 
 ---
+
+
 
 ### 20. Context7 — 实时文档获取
 
@@ -721,10 +804,13 @@ Implement basic authentication with Supabase. use library /supabase/supabase
 ```
 
 **工作模式**:
+
 - **CLI + Skills**: 安装技能，Agent 使用 `ctx7` 命令获取文档
 - **MCP**: 注册 Context7 MCP 服务器，Agent 原生调用文档工具
 
 ---
+
+
 
 ### 21. Claude Code Best Practice — 从 Vibe Coding 到工程化
 
@@ -734,20 +820,26 @@ Implement basic authentication with Supabase. use library /supabase/supabase
 
 **核心概念**:
 
-| 概念 | 位置 | 用途 |
-|------|------|------|
-| Subagents | `.claude/agents/` | 专业角色 Agent |
-| Commands | `.claude/commands/` | 斜杠命令 |
-| Skills | `.claude/skills/` | 可复用工作流 |
-| Hooks | `.claude/hooks/` | 生命周期钩子 |
-| MCP | `.claude/settings.json` | 外部工具连接 |
-| Memory | `CLAUDE.md`, `.claude/rules/` | 项目记忆 |
+
+| 概念        | 位置                            | 用途         |
+| --------- | ----------------------------- | ---------- |
+| Subagents | `.claude/agents/`             | 专业角色 Agent |
+| Commands  | `.claude/commands/`           | 斜杠命令       |
+| Skills    | `.claude/skills/`             | 可复用工作流     |
+| Hooks     | `.claude/hooks/`              | 生命周期钩子     |
+| MCP       | `.claude/settings.json`       | 外部工具连接     |
+| Memory    | `CLAUDE.md`, `.claude/rules/` | 项目记忆       |
+
 
 **编排工作流**: Command → Agent → Skill 的三层模式。
 
 ---
 
+
+
 ## 七、Token 优化
+
+
 
 ### 22. RTK — Rust Token Killer
 
@@ -769,15 +861,18 @@ rtk init -g
 
 **Token 节省（30 分钟 Claude Code 会话）**:
 
-| 操作 | 原始 Token | RTK 后 | 节省 |
-|------|-----------|--------|------|
-| git status | 3,000 | 600 | -80% |
-| git diff | 10,000 | 2,500 | -75% |
-| cargo test | 25,000 | 2,500 | -90% |
-| docker ps | 900 | 180 | -80% |
-| **总计** | **~118,000** | **~23,900** | **-80%** |
+
+| 操作         | 原始 Token     | RTK 后       | 节省       |
+| ---------- | ------------ | ----------- | -------- |
+| git status | 3,000        | 600         | -80%     |
+| git diff   | 10,000       | 2,500       | -75%     |
+| cargo test | 25,000       | 2,500       | -90%     |
+| docker ps  | 900          | 180         | -80%     |
+| **总计**     | **~118,000** | **~23,900** | **-80%** |
+
 
 **策略**:
+
 1. 智能过滤（移除注释、空白、样板）
 2. 分组聚合（按目录、按类型）
 3. 截断（保留相关上下文）
@@ -785,7 +880,11 @@ rtk init -g
 
 ---
 
+
+
 ## 八、学习教程
+
+
 
 ### 23. Learn Claude Code — Agent Harness 工程教程
 
@@ -797,14 +896,16 @@ rtk init -g
 
 **20 节渐进式课程**:
 
-| 阶段 | 章节 | 主题 |
-|------|------|------|
-| 🌱 核心能力 | s01-s04 | Agent 循环、工具使用、权限、钩子 |
-| | s05-s08 | TodoWrite、子 Agent、技能加载、上下文压缩 |
-| | s09-s11 | 记忆系统、系统提示、错误恢复 |
-| 🚀 高级能力 | s12-s14 | 任务系统、后台任务、定时调度 |
-| | s15-s18 | Agent 团队、团队协议、自主 Agent、工作树隔离 |
-| | s07,s19-s20 | 技能加载、MCP 插件、完整 Agent |
+
+| 阶段      | 章节          | 主题                           |
+| ------- | ----------- | ---------------------------- |
+| 🌱 核心能力 | s01-s04     | Agent 循环、工具使用、权限、钩子          |
+|         | s05-s08     | TodoWrite、子 Agent、技能加载、上下文压缩 |
+|         | s09-s11     | 记忆系统、系统提示、错误恢复               |
+| 🚀 高级能力 | s12-s14     | 任务系统、后台任务、定时调度               |
+|         | s15-s18     | Agent 团队、团队协议、自主 Agent、工作树隔离 |
+|         | s07,s19-s20 | 技能加载、MCP 插件、完整 Agent         |
+
 
 **快速开始**:
 
@@ -819,6 +920,8 @@ python s01_agent_loop/code.py   # 从 Agent 循环开始
 
 ---
 
+
+
 ### 24. Hello-Agents — 从零构建智能体
 
 **仓库**: [datawhalechina/hello-agents](https://github.com/datawhalechina/hello-agents) ⭐ 61.9K+
@@ -827,19 +930,25 @@ python s01_agent_loop/code.py   # 从 Agent 循环开始
 
 **16 章内容**:
 
-| 部分 | 章节 | 内容 |
-|------|------|------|
-| 第一部分 | 1-3 | 智能体基础、发展史、LLM 基础 |
-| 第二部分 | 4-7 | 经典范式实现、低代码平台、框架实践、自研框架 |
-| 第三部分 | 8-12 | 记忆与检索、上下文工程、通信协议、Agentic-RL、评估 |
-| 第四部分 | 13-15 | 旅行助手、深度研究 Agent、赛博小镇 |
-| 第五部分 | 16 | 毕业设计 |
+
+| 部分   | 章节    | 内容                             |
+| ---- | ----- | ------------------------------ |
+| 第一部分 | 1-3   | 智能体基础、发展史、LLM 基础               |
+| 第二部分 | 4-7   | 经典范式实现、低代码平台、框架实践、自研框架         |
+| 第三部分 | 8-12  | 记忆与检索、上下文工程、通信协议、Agentic-RL、评估 |
+| 第四部分 | 13-15 | 旅行助手、深度研究 Agent、赛博小镇           |
+| 第五部分 | 16    | 毕业设计                           |
+
 
 **在线阅读**: [hello-agents.datawhale.cc](https://hello-agents.datawhale.cc)
 
 ---
 
+
+
 ## 九、资源合集
+
+
 
 ### 25. Awesome Claude Skills — 精选技能合集
 
@@ -849,34 +958,40 @@ python s01_agent_loop/code.py   # 从 Agent 循环开始
 
 **内容分类**:
 
-| 类别 | 示例 |
-|------|------|
-| 文档处理 | docx, pdf, pptx, xlsx, Markdown to EPUB |
-| 开发工具 | Artifacts Builder, MCP Builder, Playwright |
-| 数据分析 | CSV Summarizer, Deep Research |
+
+| 类别   | 示例                                                        |
+| ---- | --------------------------------------------------------- |
+| 文档处理 | docx, pdf, pptx, xlsx, Markdown to EPUB                   |
+| 开发工具 | Artifacts Builder, MCP Builder, Playwright                |
+| 数据分析 | CSV Summarizer, Deep Research                             |
 | 商务营销 | Brand Guidelines, Lead Research, Domain Name Brainstormer |
-| 通讯写作 | Content Research Writer, Meeting Insights Analyzer |
-| 自动化 | Slack, Gmail, GitHub, Jira, Notion 等 70+ SaaS |
+| 通讯写作 | Content Research Writer, Meeting Insights Analyzer        |
+| 自动化  | Slack, Gmail, GitHub, Jira, Notion 等 70+ SaaS             |
+
 
 **特别推荐**: `connect-apps` 插件让 Claude 能连接 500+ 应用（Gmail、Slack、GitHub、Notion 等），执行真实的操作。
 
 ---
 
+
+
 ## 总结与建议
 
 根据你的需求选择合适的项目：
 
-| 需求 | 推荐项目 |
-|------|---------|
-| 完整的 Agent 系统 | ECC、gstack、oh-my-openagent、Goose |
-| 技能与工作流 | Superpowers、Matt Pocock Skills、Addy Osmani Skills、Ponytail |
-| 行为准则 | andrej-karpathy-skills |
-| 规范驱动开发 | Spec Kit、OpenSpec |
-| 代码理解 | Graphify、Understand Anything、CodeGraph |
-| 跨会话记忆 | Claude-Mem、Mem0 |
-| Token 优化 | Caveman、RTK |
-| 学习入门 | Learn Claude Code、Hello-Agents、Prompt Engineering Guide |
-| 文档获取 | Context7 |
-| 资源收集 | Awesome Claude Skills、Claude Code Best Practice |
 
-建议组合：使用 **ECC** 或 **gstack** 作为基础运行时，搭配 **Superpowers** 或 **Matt Pocock Skills** 作为工作流纪律层，加上 **Graphify/CodeGraph** 提供代码理解，最后用 **RTK** 或 **Caveman** 优化 Token 消耗。
+| 需求           | 推荐项目                                                       |
+| ------------ | ---------------------------------------------------------- |
+| 完整的 Agent 系统 | ECC、gstack、oh-my-openagent、Goose                           |
+| 技能与工作流       | Superpowers、Matt Pocock Skills、Addy Osmani Skills、Ponytail |
+| 行为准则         | andrej-karpathy-skills                                     |
+| 规范驱动开发       | Spec Kit、OpenSpec                                          |
+| 代码理解         | Graphify、Understand Anything、CodeGraph                     |
+| 跨会话记忆        | Claude-Mem、Mem0                                            |
+| Token 优化     | Caveman、RTK                                                |
+| 学习入门         | Learn Claude Code、Hello-Agents、Prompt Engineering Guide    |
+| 文档获取         | Context7                                                   |
+| 资源收集         | Awesome Claude Skills、Claude Code Best Practice            |
+
+
+建议组合：使用 **Superpowers**, **Matt Pocock Skills** 并配合 **Karpathy** 作为工作流纪律层，加上 **Ponytail** 编写代码，最后用 **RTK** 或 **Caveman** 优化 Token 消耗。
