@@ -1,11 +1,10 @@
 ---
-
-## title: "26 个必知 AI Agent 开源项目教程"
-
+title: "26 个必知 AI Agent 开源项目教程"
 date: 2025-06-26T00:00:00+08:00
 draft: false
 tags: ["AI", "Agent", "教程"]
 categories: ["AI"]
+---
 
 2025~2026 年，AI Agent 领域涌现了大量高质量开源项目。本文系统梳理 25 个关键项目，按用途分类讲解。
 
