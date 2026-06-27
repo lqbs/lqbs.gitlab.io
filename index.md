@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 程序员如何选 AI 模型
       link: /posts/ai-model-selection-for-programmers
+    - theme: alt
+      text: 互联网项目完整流程
+      link: /posts/internet-project-lifecycle
 
 features:
   - title: 🚀 26 个必知 AI Agent 项目
@@ -20,5 +23,8 @@ features:
   - title: 🧠 程序员 AI 模型选型指南
     details: 结合 Artificial Analysis Intelligence Index v4.1，把「综合智能分」拆成复杂推理、日常编码、长上下文、Agent 改仓库、中文与成本六个场景，给出可直接套用的选型表。
     link: /posts/ai-model-selection-for-programmers
+  - title: 🔁 互联网项目从立项到迭代
+    details: 把互联网项目拆成 10 个阶段：立项、需求、产品、UI、技术、开发、测试、上线、运营、迭代，每个阶段列出输入、产出与责任方。
+    link: /posts/internet-project-lifecycle
 ---
 
