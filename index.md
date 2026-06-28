@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: 互联网项目完整流程
       link: /posts/internet-project-lifecycle
+    - theme: alt
+      text: 技术设计全流程
+      link: /posts/tech-design-for-internet-projects
 
 features:
   - title: 🚀 26 个必知 AI Agent 项目
@@ -26,5 +29,8 @@ features:
   - title: 🔁 互联网项目从立项到迭代
     details: 把互联网项目拆成 10 个阶段：立项、需求、产品、UI、技术、开发、测试、上线、运营、迭代，每个阶段列出输入、产出与责任方。
     link: /posts/internet-project-lifecycle
+  - title: 🏗️ 互联网项目的技术设计
+    details: 从需求拆解、系统边界、架构、技术选型，到数据库、接口、安全、性能、部署、监控与评审，18 步把产品需求转成可落地的技术方案。
+    link: /posts/tech-design-for-internet-projects
 ---
 
